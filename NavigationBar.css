@@ -1,0 +1,99 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+nav{
+    background-color: rgba(230,255,255,255);
+    height: 80px;
+    width: 100%;
+}
+
+.logo{
+    width: 65px;
+    height: 65px;
+    padding: 10px;
+    margin-left: 25px;
+    position: absolute;
+}
+
+nav ul{
+    list-style: none;
+    float:right;
+    margin-top: 22px;
+    margin-right: 12%;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 8px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+}
+
+nav ul li a{
+    color: rgba(120,132,135,255);
+    font-size: 17;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    height: 34px;
+    width: 54px;
+    cursor: pointer;
+    right: 30px;
+    top: 28px;
+    border-radius: 5px;
+    border: 3px solid rgb(114, 106, 106);
+}
+
+.line{
+    width: 26px;
+    background-color: gray;
+    height: 2px;
+    margin: 5px 3px;
+    margin-left: 13px;
+    margin-top: 7px;
+    padding: -20px;
+}
+
+nav ul li:hover{
+    background-color: rgba(128,255,255,255);
+}
+
+@media only  screen and (max-width : 1110px){
+   
+    nav ul{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        float: left;
+    }
+    nav ul li{
+        padding: -5px;
+        margin-left: 20px;
+        max-width: 772px;
+    }
+    .burger{
+        display: block;
+    }
+    .nav-bar{
+        height: 90px;
+        transition: 0.5s;
+    }
+    .list{
+        opacity: 0;
+    }
+    .res-nav-bar{
+        height: 400px;
+        transition: 0.5s;
+    }
+    .res-list{
+        opacity: 100%;
+        transition: 0.3s;
+        width: 100%;
+    }
+}

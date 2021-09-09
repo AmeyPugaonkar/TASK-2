@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui;
+}
+
+.country{
+    display: flex;
+    background-color: rgba(153,51,204,255);
+    height: 112px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-family: Verdana;
+    font-weight: 500;
+    color: white;
+}
+
+.box{
+    display: flex;
+    padding: 18px;
+    height: 285px;
+    margin: 15px;
+}
+
+/***** Left Side ******/
+.leftSide{
+    /* background-color: blue; */
+    width: 20%;
+    margin-right: 15px;
+}
+.leftSide li{
+    list-style: none;
+    background-color: rgba(51,181,229,255);
+    width: 100%;
+    height: 40px;   
+}
+.leftSide li div{
+    padding: 8px;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+.list-places{
+    margin-top: 10px;
+}
+.culture, .clothing, .education, .society{
+    margin-top: 8px;
+}
+
+/***** Middle Side *****/
+.middleSide{
+    /* background-color: darkkhaki; */
+    width: 60%;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.middleSide .content{
+    padding: 12px;
+    margin-top: 42px;
+    font-size: 17px;
+}
+.middleSide .about{
+    margin-top: 28px;
+    margin-left: 45%;
+    font-size: 35px;
+    font-family: Franklin Gothic Medium;
+}
+
+/***** Right Side ******/
+.rightSide{
+    background-color: rgba(51,181,229,255);
+    width: 20%;
+    margin-left: 15px;
+}
+
+.rightSide li{
+    list-style-type:circle;
+    margin-left: 50px;
+    color: white;
+}
+
+.heading{
+    margin-left: 50px;
+    margin-top: 32px;
+    font-size: 20px;
+    color: white;
+}
+
+@media only screen and (max-width: 1327px){
+    .leftSide {  
+        width: 13%;
+    }
+    .middleSide{
+        max-width: 50%;
+    }
+    .rightSide{
+        width: 28%;
+        transition: 0.5s;
+    }
+}
+
+@media only screen and (max-width: 934px) {
+    
+    .leftSide {
+        width: 25%;
+    }
+    .box{
+        flex-wrap: wrap;
+    }
+    .middleSide{
+        width: 68%;
+    }
+    .middleSide .about {
+        margin-top: 0px;
+    }
+    .middleSide .content{
+        margin-top: 12px;
+    }
+    .rightSide{
+        width: 100%;
+        margin-top: 15px;
+        transition: 0.5s;
+    }
+   
+  }
+
+  @media only screen and (max-width: 732px){
+
+    .leftSide{
+        width: 100%;
+        transition: 0.5s;
+    }
+    .middleSide .about{
+        margin-top: 45px;
+        transition: 0.5s;
+    }
+    .middleSide .content {
+        width: 146%;
+    }
+
+  }

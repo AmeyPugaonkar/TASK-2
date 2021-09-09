@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="NavigationBar.css">
+</head>
+
+<body>
+    <nav class="nav-bar" >
+        <img class="logo" src="logo.png" alt="LOGO">
+
+        <ul class="list">
+            <li class="ele"><a href="#">HOME</a></li>
+            <li class="ele"><a href="#">WHAT WE DO</a></li>
+            <li class="ele"><a href="#">REGISTOR</a></li>
+            <li class="ele"><a href="#">OUR ACTIVITY</a></li>
+            <li class="ele"><a href="#">COURSES</a></li>
+            <li class="ele"><a href="#">INTERNSIP</a></li>
+            <li class="ele"><a href="#">CONTACT US</a></li>
+        </ul>
+        <div class="burger" id="borderC" onclick="color()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <script>
+        burger=document.querySelector('.burger')
+        navbar=document.querySelector('.nav-bar')
+        list=document.querySelector('.list')
+        burger.addEventListener('click',()=>{
+            navbar.classList.toggle('res-nav-bar')
+            list.classList.toggle('res-list')
+        })
+
+        let status = false;
+        function color(){
+            if(status == false){
+                document.querySelector('#borderC').style.borderColor="black";
+                status = true
+            }
+            else{
+                document.querySelector('#borderC').style.borderColor="gray";
+                status = false;
+            }
+        }
+    </script>
+</body>
+
+</html>
